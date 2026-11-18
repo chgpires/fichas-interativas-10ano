@@ -18,7 +18,7 @@
 
   function numericValue(text) {
     let value = text.trim().toLowerCase().replace(/[−–]/g, '-').replace(/,/g, '.');
-    value = value.replace(/×\s*10\s*\^?\s*([+-]?\d+)/g, 'e$1').replace(/\*\s*10\s*\^?\s*([+-]?\d+)/g, 'e$1');
+    value = value.replace(/[x×*]\s*10\s*\^?\s*([+-]?\d+)/g, 'e$1');
     value = value.replace(/\s*e\s*([+-]?)\s*(\d+)/g, 'e$1$2');
     const match = value.match(/[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?/);
     if (!match) return NaN;
