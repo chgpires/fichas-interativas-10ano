@@ -20,9 +20,11 @@
     let value = text.trim().toLowerCase().replace(/[−–]/g, '-').replace(/,/g, '.');
     value = value.replace(/[x×*]\s*10\s*\^?\s*([+-]?\d+)/g, 'e$1');
     value = value.replace(/\s*e\s*([+-]?)\s*(\d+)/g, 'e$1$2');
-    const match = value.match(/[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?/);
-    if (!match) return NaN;
-    const number = Number(match[0]);
+    const numberPattern = '[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:e[+-]?\\d+)?';
+    const expression = value.match(new RegExp(`^\\s*${numberPattern}(?:\\s*[x×*]\\s*${numberPattern})*`, 'i'));
+    if (!expression) return NaN;
+    const factors = expression[0].split(/\s*[x×*]\s*/).map(Number);
+    const number = factors.reduce((product, factor) => product * factor, 1);
     return Number.isFinite(number) ? number : NaN;
   }
 
