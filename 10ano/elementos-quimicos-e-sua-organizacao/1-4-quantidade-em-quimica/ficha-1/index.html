@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b38">
+  <title>Quantidade de matéria | Ficha interativa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Física e Química A · 10.º ano</p>
+      <h1>Quantidade de matéria</h1>
+      <p class="subtitle">Massa e tamanho dos átomos · ficha interativa · César Pires &amp; ChatGPT</p>
+      <p class="subtitle-note">Ficha adaptada, analisa criteriosamente as resoluções.</p>
+      <div class="progress-row"><span id="progress-label">0 de 12 grupos concluídos</span><span id="progress-percent">0%</span></div>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+    </div>
+  </header>
+  <main>
+    <section class="toolbar" aria-label="Controlos da ficha">
+      <p>Escreve os valores com unidades quando forem pedidas. Usa <strong>vírgula ou ponto</strong> nas casas decimais. Também podes usar notação científica. Para escrever expoentes, usa ^, por exemplo: 1,2 × 10^-23.</p>
+      <div class="toolbar-actions"><button id="check-all" class="button primary">Corrigir respostas</button><button id="reset" class="button quiet">Limpar ficha</button></div>
+    </section>
+    <div id="questions"></div>
+    <section class="finish-card">
+      <div><p class="eyebrow">Consulta</p><h2>Soluções explicadas</h2><p>Vê as resoluções quando terminares ou usa-as para rever um exercício.</p></div>
+      <button id="toggle-solutions" class="button light">Mostrar soluções</button>
+    </section>
+    <section id="solutions" class="solutions hidden" aria-label="Soluções explicadas"></section>
+    <footer>Ficha de trabalho. Adaptada para utilização no navegador.</footer>
+  </main>
+</body>
+</html>
+
