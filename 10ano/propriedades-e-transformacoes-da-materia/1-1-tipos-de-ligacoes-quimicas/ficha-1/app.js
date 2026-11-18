@@ -173,7 +173,7 @@ function checkActivity(index) {
     attempted = answers.every(Boolean);
     complete = answers.every((answer, i) => answer === activity.correct[i]);
     status.textContent = attempted
-      ? (complete ? 'Atividade concluída.' : 'Reveja as respostas e tente novamente.')
+      ? (complete ? 'Atividade concluída com sucesso!' : 'Reveja as respostas e tente novamente.')
       : 'Responde às quatro afirmações.';
   } else {
     const chosen = selectedIndexes(index).sort((a, b) => a - b);
@@ -181,7 +181,7 @@ function checkActivity(index) {
     const expected = [...activity.correct].sort((a, b) => a - b);
     complete = chosen.length === expected.length && chosen.every((value, i) => value === expected[i]);
     status.textContent = attempted
-      ? (complete ? 'Atividade concluída.' : 'Reveja a resposta e tente novamente.')
+      ? (complete ? 'Atividade concluída com sucesso!' : 'Reveja a resposta e tente novamente.')
       : 'Ainda não respondeste.';
   }
   status.classList.toggle('wrong-text', attempted && !complete);
