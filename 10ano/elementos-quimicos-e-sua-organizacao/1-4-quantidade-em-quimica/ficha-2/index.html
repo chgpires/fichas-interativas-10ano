@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b57">
+  <meta name="description" content="Ficha interativa de massa molar, quantidade de matéria e número de entidades.">
+  <title>Massa molar, quantidade de matéria e número de entidades · ficha interativa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Ciências Físico-Química · 10.º ano</p>
+      <h1>Massa molar, quantidade de matéria e número de entidades · ficha interativa · César Pires &amp; ChatGPT</h1>
+      <p class="adapted">Ficha adaptada, analisa criteriosamente as resoluções.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="instructions" aria-labelledby="instructions-title">
+      <h2 id="instructions-title">Ficha de trabalho 1</h2>
+      <p>Responde às questões pela ordem apresentada. Para as respostas numéricas, usa vírgula ou ponto nas casas decimais. Podes escrever potências de dez com <code>×10^</code> ou <code>e</code> (por exemplo, <code>6,022×10^23</code>). Inclui unidades quando forem pedidas.</p>
+      <p class="source-note"><strong>Nota sobre a chave do PDF:</strong> nas questões 1.3 e 9, os valores da solução impressa não correspondem ao enunciado. A correção automática segue o enunciado: em 1.3 considera o número de átomos de oxigénio; em 9, considera quatro átomos de hidrogénio por molécula de hidrazina.</p>
+      <div class="toolbar">
+        <button type="button" id="check-all" class="primary">Corrigir ficha</button>
+        <button type="button" id="show-solutions" class="secondary">Mostrar soluções</button>
+        <button type="button" id="reset-all" class="quiet">Limpar respostas</button>
+        <p id="overall-status" class="overall-status" aria-live="polite">Ainda não respondeste.</p>
+      </div>
+    </section>
+
+    <form id="worksheet" novalidate>
+      <section class="exercise" aria-labelledby="q1-title">
+        <h2 id="q1-title">1. Calcula o número de átomos presentes em:</h2>
+        <div class="grid two">
+          <label class="answer-item"><span>1.1. Duas moles de átomos de sódio.</span><input data-answer="q1-1" aria-label="Resposta à questão 1.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>1.2. Meia mole de átomos de hélio.</span><input data-answer="q1-2" aria-label="Resposta à questão 1.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>1.3. 3,0 moles de moléculas de oxigénio</span><input data-answer="q1-3" aria-label="Resposta à questão 1.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>1.4. 2,5 moles de H₂SO₄.</span><input data-answer="q1-4" aria-label="Resposta à questão 1.4" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 1</summary><p>1.1. 1,20 × 10²⁴; 1.2. 3,011 × 10²³; 1.3. 3,613 × 10²⁴; 1.4. 1,054 × 10²⁵.</p><p class="discrepancy">Em 1.3, a solução do PDF apresenta 3,011 × 10²³, valor que não corresponde ao número de átomos em 3,0 mol de moléculas O₂.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q2-title">
+        <h2 id="q2-title">2. Calcula a quantidade química correspondente a:</h2>
+        <div class="grid">
+          <label class="answer-item"><span>2.1. 6,022 × 10²² átomos de carbono.</span><input data-answer="q2-1" aria-label="Resposta à questão 2.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>2.2. 3,01 × 10²³ moléculas de cloro.</span><input data-answer="q2-2" aria-label="Resposta à questão 2.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>2.3. 4,0 × 10²⁵ átomos de ouro.</span><input data-answer="q2-3" aria-label="Resposta à questão 2.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="formula"><summary>Relação apresentada</summary><p>n = N / N<sub>A</sub></p></details>
+        <details class="solution"><summary>Soluções da questão 2</summary><p>2.1. 0,1 mol; 2.2. 0,5 mol; 2.3. 66,42 mol.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q3-title">
+        <h2 id="q3-title">3. Determina a massa molar (M) de cada uma das seguintes substâncias:</h2>
+        <div class="grid two">
+          <label class="answer-item"><span>3.1. Água (H₂O)</span><input data-answer="q3-1" aria-label="Resposta à questão 3.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>3.2. Sulfito de sódio (Na₂SO₃)</span><input data-answer="q3-2" aria-label="Resposta à questão 3.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>3.3. Hidróxido de cálcio (Ca(OH)₂)</span><input data-answer="q3-3" aria-label="Resposta à questão 3.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>3.4. ácido nítrico (HNO₃)</span><input data-answer="q3-4" aria-label="Resposta à questão 3.4" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>3.5. frutose (C₆H₁₂O₆)</span><input data-answer="q3-5" aria-label="Resposta à questão 3.5" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 3</summary><p>3.1. 18,02 g/mol; 3.2. 126,05 g/mol; 3.3. 74,10 g/mol; 3.4. 63,0 g/mol; 3.5. 180,18 g/mol.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q4-title">
+        <h2 id="q4-title">4. Calcula a quantidade química correspondente a:</h2>
+        <div class="grid two">
+          <label class="answer-item"><span>4.1. 16,0 g de SO₃;</span><input data-answer="q4-1" aria-label="Resposta à questão 4.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>4.2. 428 g de ácido fosfórico (H₃PO₄);</span><input data-answer="q4-2" aria-label="Resposta à questão 4.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>4.3. 0,5 mg de amoníaco (NH₃);</span><input data-answer="q4-3" aria-label="Resposta à questão 4.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>4.4. 200 g de K₂Co(SO₄)₂·6H₂O</span><input data-answer="q4-4" aria-label="Resposta à questão 4.4" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="formula"><summary>Relação apresentada</summary><p>n = m / M</p></details>
+        <details class="solution"><summary>Soluções da questão 4</summary><p>4.1. 0,1998 mol; 4.2. 4,37 mol; 4.3. 2,93 × 10⁻⁵ mol; 4.4. 0,457 mol.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q5-title">
+        <h2 id="q5-title">5. Indica justificando, qual das seguintes amostras tem maior número de átomos:</h2>
+        <label class="answer-item"><span>Resposta e justificação</span><input data-answer="q5" aria-label="Amostra com maior número de átomos e justificação, questão 5" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        <details class="solution"><summary>Solução da questão 5</summary><p>Hélio, com 3,011 × 10²⁰ átomos.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q6-title">
+        <h2 id="q6-title">6. O ozono tem a fórmula química O₃. Complete as seguintes afirmações:</h2>
+        <div class="grid">
+          <label class="answer-item"><span>A- Uma mole de moléculas de ozono contém __________ moléculas de ozono.</span><input data-answer="q6-a" aria-label="Resposta à afirmação A da questão 6" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>B- Uma mole de moléculas de ozono contém __________ moles de átomos de oxigénio.</span><input data-answer="q6-b" aria-label="Resposta à afirmação B da questão 6" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>C- Uma mole de moléculas de ozono contém __________ átomos de oxigénio.</span><input data-answer="q6-c" aria-label="Resposta à afirmação C da questão 6" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 6</summary><p>A- 6,022 × 10²³; B- 3; C- 3 × 6,022 × 10²³ = 1,81 × 10²⁴.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q7-title">
+        <h2 id="q7-title">7. A fórmula química do propano é C₃H₈. Complete a seguinte afirmação.</h2>
+        <p>Uma massa de 8,8 g de propano, correspondem __________ moles de propano, que contêm _________ moléculas de propano, __________ átomos de carbono e __________ átomos de hidrogénio.</p>
+        <div class="grid two">
+          <label class="answer-item"><span>Moles de propano</span><input data-answer="q7-1" aria-label="Quantidade química de propano na questão 7" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>Moléculas de propano</span><input data-answer="q7-2" aria-label="Número de moléculas de propano na questão 7" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>Átomos de carbono</span><input data-answer="q7-3" aria-label="Número de átomos de carbono na questão 7" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>Átomos de hidrogénio</span><input data-answer="q7-4" aria-label="Número de átomos de hidrogénio na questão 7" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 7</summary><p>0,1995 mol; 1,201 × 10²³ moléculas; 3,604 × 10²³ átomos de carbono; 9,611 × 10²³ átomos de hidrogénio.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q8-title">
+        <h2 id="q8-title">8. Calcule a massa de:</h2>
+        <div class="grid two">
+          <label class="answer-item"><span>8.1. 0,20 mol de CaCO₃;</span><input data-answer="q8-1" aria-label="Resposta à questão 8.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>8.2. 0,5 mol de MgSO₄·10H₂O;</span><input data-answer="q8-2" aria-label="Resposta à questão 8.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>8.3. 0,53 mol de NH₄⁺;</span><input data-answer="q8-3" aria-label="Resposta à questão 8.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>8.4. Uma mistura de 0,50 mol de CO₂ e 6,0 × 10²³ moléculas de N₂.</span><input data-answer="q8-4" aria-label="Resposta à questão 8.4" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 8</summary><p>8.1. 20,018 g; 8.2. 150,29 g; 8.3. 9,57 g; 8.4. 49,925 g.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q9-title">
+        <h2 id="q9-title">9. Complete a seguinte tabela.</h2>
+        <div class="table-wrap" role="region" aria-label="Tabela da questão 9; desloca horizontalmente para consultar todas as colunas" tabindex="0">
+          <table>
+            <thead><tr><th scope="col">Substância</th><th scope="col">n (moles)</th><th scope="col">m (gramas)</th><th scope="col">M (g/mol)</th><th scope="col">n.º de moléculas</th><th scope="col">n.º de átomos de N</th><th scope="col">n.º de átomos de H</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Amoníaco (NH₃)</th><td><label class="table-answer"><span class="sr-only">Amoníaco: n (moles)</span><input data-answer="q9-nh3-n" aria-label="Amoníaco: n (moles)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Amoníaco: m (gramas)</span><input data-answer="q9-nh3-m" aria-label="Amoníaco: m (gramas)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Amoníaco: M (g/mol)</span><input data-answer="q9-nh3-M" aria-label="Amoníaco: M (g/mol)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Amoníaco: número de moléculas</span><input data-answer="q9-nh3-mol" aria-label="Amoníaco: número de moléculas" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Amoníaco: número de átomos de N</span><input data-answer="q9-nh3-N" aria-label="Amoníaco: número de átomos de N" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Amoníaco: número de átomos de H</span><input data-answer="q9-nh3-H" aria-label="Amoníaco: número de átomos de H" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td></tr>
+              <tr><th scope="row">Hidrazina (N₂H₄)</th><td><label class="table-answer"><span class="sr-only">Hidrazina: n (moles)</span><input data-answer="q9-n2h4-n" aria-label="Hidrazina: n (moles)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Hidrazina: m (gramas)</span><input data-answer="q9-n2h4-m" aria-label="Hidrazina: m (gramas)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Hidrazina: M (g/mol)</span><input data-answer="q9-n2h4-M" aria-label="Hidrazina: M (g/mol)" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Hidrazina: número de moléculas</span><input data-answer="q9-n2h4-mol" aria-label="Hidrazina: número de moléculas" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Hidrazina: número de átomos de N</span><input data-answer="q9-n2h4-N" aria-label="Hidrazina: número de átomos de N" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td><td><label class="table-answer"><span class="sr-only">Hidrazina: número de átomos de H</span><input data-answer="q9-n2h4-H" aria-label="Hidrazina: número de átomos de H" autocomplete="off"></label><span class="feedback" aria-live="polite"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-hint">Desloca a tabela horizontalmente para veres todas as colunas.</p>
+        <details class="solution"><summary>Soluções da questão 9</summary><p>Amoníaco: n = 0,20 mol; m = 3,408 g; M = 17,04 g/mol; 1,20 × 10²³ moléculas; 1,20 × 10²³ átomos de N; 3,61 × 10²³ átomos de H.</p><p>Hidrazina: n = 4,002 mol; m = 128,30 g; M = 32,06 g/mol; 2,41 × 10²⁴ moléculas; 4,82 × 10²⁴ átomos de N; 9,64 × 10²⁴ átomos de H.</p><p class="discrepancy">A solução impressa no PDF indica 3,316 × 10²³ átomos de H no amoníaco; para NH₃, o resultado correspondente a 1,20 × 10²³ moléculas é 3,61 × 10²³ átomos de H.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q10-title">
+        <h2 id="q10-title">10. No armário de um laboratório de química está um frasco de vidro, em cujo rótulo se encontram, entre outras informações, o nome, a fórmula química da substância que contém e a sua massa molar: etanol (álcool etílico) C₂H₆O; M (C₂H₆O) = 46,07 g·mol⁻¹.</h2>
+        <p>Suponha que se retirou do frasco 1,15 g de etanol.</p>
+        <label class="answer-item"><span>10.1. Que quantidade química de etanol se retirou do frasco?</span><input data-answer="q10-1" aria-label="Resposta à questão 10.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        <h3>10.2. Para esta massa de etanol, determine:</h3>
+        <div class="grid">
+          <label class="answer-item"><span>10.2.1. O número de moléculas de etanol;</span><input data-answer="q10-2-1" aria-label="Resposta à questão 10.2.1" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>10.2.2. Quantidade de átomos de hidrogénio;</span><input data-answer="q10-2-2" aria-label="Resposta à questão 10.2.2" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+          <label class="answer-item"><span>10.2.3. O número de átomos de carbono.</span><input data-answer="q10-2-3" aria-label="Resposta à questão 10.2.3" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        </div>
+        <details class="solution"><summary>Soluções da questão 10</summary><p>10.1. 0,025 mol; 10.2.1. 1,5055 × 10²² moléculas; 10.2.2. 0,150 mol de átomos de H; 10.2.3. 3,011 × 10²² átomos de C.</p></details>
+      </section>
+
+      <section class="exercise" aria-labelledby="q11-title">
+        <h2 id="q11-title">11. Calcule a quantidade química de bário que contém o mesmo número de átomos que os existentes em 16,00g de oxigénio O₂.</h2>
+        <label class="answer-item"><span>Resposta</span><input data-answer="q11" aria-label="Resposta à questão 11" autocomplete="off"><span class="feedback" aria-live="polite"></span></label>
+        <details class="solution"><summary>Solução da questão 11</summary><p>1 mol.</p></details>
+      </section>
+    </form>
+  </main>
+  <footer>Ficha de trabalho. Adaptada para utilização no navegador.</footer>
+</body>
+</html>
