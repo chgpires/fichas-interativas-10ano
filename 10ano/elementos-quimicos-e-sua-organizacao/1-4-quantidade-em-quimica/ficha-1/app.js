@@ -13,7 +13,7 @@ const qs=[
 {title:'Composição de uma solução',context:'Uma solução aquosa de K₂CrO₄ tem volume 500,0 mL e densidade 1,02 g cm⁻³. Contém 48,6 g de soluto. M(K₂CrO₄) = 194,18 g mol⁻¹; M(H₂O) = 18,02 g mol⁻¹.',parts:[['Quantidade de K₂CrO₄','num',0.25,'mol'],['Massa do solvente (água)','num',461.4,'g'],['Fração molar do soluto','num',0.00967,''],['Fração molar do solvente','num',0.9903,''],['Fração mássica do soluto','num',0.0953,'']]}
 ];
 const solutions=[
-['Usa n = m/M: n(C₂H₆) = 6,0/30,07 = 0,20 mol.','Usa N = n × Nₐ: N(C₂H₆) = 0,20 × 6,02 × 10²³ = 1,2 × 10²³ moléculas.','Usa n(átomos de C) = 2 × n(C₂H₆): 2 × 0,20 = 0,40 mol.','Usa n(átomos de H) = 6 × n(C₂H₆): 6 × 0,20 = 1,20 mol.'],
+['Usa n = m/M: n(C₂H₆) = 6,0/30,07 = 0,20 mol.','Usa N = n × Nₐ: N(C₂H₆) = 0,20 × 6,02 × 10²³ = 1,2 × 10²³ moléculas.','n(átomos de C) = 2 × n(C₂H₆) = 2 × 0,20 = 0,40 mol.','n(átomos de H) = 6 × n(C₂H₆) = 6 × 0,20 = 1,20 mol.'],
 ['Usa n = m/M: n(C₂H₆O) = 1,15/46,07 = 2,50 × 10⁻² mol.','Usa N = n × Nₐ: N(C₂H₆O) = 0,0250 × 6,02 × 10²³ = 1,50 × 10²² moléculas.','Usa N(C) = 2 × N(C₂H₆O): 2 × 1,50 × 10²² = 3,00 × 10²² átomos.','Usa N(H) = 6 × N(C₂H₆O): 6 × 1,50 × 10²² = 9,03 × 10²² átomos.','Usa N(O) = 1 × N(C₂H₆O): 1 × 1,50 × 10²² = 1,50 × 10²² átomos.'],
 ['Usa n = m/M: n(A) = 5,6/55,85 ≈ 0,10 mol e n(B) = 6,54/65,38 ≈ 0,10 mol; portanto, A e B têm igual quantidade de átomos.','Usa n = m/M e N = n × Nₐ: n(Ca) = 20/40,08 ≈ 0,50 mol e N(Ca) = 0,50 × 6,02 × 10²³ ≈ 3,01 × 10²³ átomos.'],
 ['Usa m = n × M: m(C) = 0,50 × 36,46 ≈ 18 g; m(D) = 0,25 × 194,2 ≈ 49 g; m(A) = 1,0 × 55,85 ≈ 55,85 g; m(B) = 2,0 × 32 = 64 g. Logo: C < D < A < B.'],
