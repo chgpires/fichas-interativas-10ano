@@ -17,3 +17,5 @@
 .group-solution{margin-top:12px;padding:15px 17px;background:#f5faf7;border:1px solid #dce9e3;border-radius:12px}
 .group-solution h3{font:700 1rem Manrope,sans-serif;margin:0 0 7px;color:var(--teal-dark)}
 .group-solution p{margin:4px 0;color:#465a60}
+.q-context{margin-bottom:5px}.q-givens{margin:0 0 13px;padding:9px 12px;background:#edf4f0;border-radius:8px;color:#465e63;font-size:.9rem}.q-givens strong{color:#285d56}
+
