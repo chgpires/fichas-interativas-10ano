@@ -23,3 +23,5 @@
 
 .topic-line{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:.35rem;row-gap:.2rem;margin:10px 0 4px}.topic-prefix{color:#c1d6d4;font-size:1rem}.topic-line h1{margin:0}
 
+.toolbar-copy h2{margin:0 0 6px;font:700 1rem Manrope,sans-serif;color:var(--teal-dark)}.toolbar-copy p{color:#b42318}
+
