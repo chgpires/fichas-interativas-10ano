@@ -13,18 +13,18 @@ const qs=[
 {title:'Composição de uma solução',context:'Uma solução aquosa de K₂CrO₄ tem volume 500,0 mL e densidade 1,02 g cm⁻³. Contém 48,6 g de soluto. M(K₂CrO₄) = 194,18 g mol⁻¹; M(H₂O) = 18,02 g mol⁻¹.',parts:[['Quantidade de K₂CrO₄','num',0.25,'mol'],['Massa do solvente (água)','num',461.4,'g'],['Fração molar do soluto','num',0.00967,''],['Fração molar do solvente','num',0.9903,''],['Fração mássica do soluto','num',0.0953,'']]}
 ];
 const solutions=[
-'n = 6,0/30,07 = 0,20 mol. N = 0,20 × Nₐ = 1,2 × 10²³ moléculas. Cada molécula tem 2 C e 6 H: 0,40 mol de átomos de C e 1,20 mol de átomos de H.',
-'n = 1,15/46,07 = 2,50 × 10⁻² mol. Isso corresponde a 1,50 × 10²² moléculas; multiplicando pelo número de átomos de cada elemento: C = 3,00 × 10²², H = 9,03 × 10²² e O = 1,50 × 10²² átomos.',
-'A e B têm 0,10 mol de átomos cada. Na amostra C: n(Ca) = 20/40,08 ≈ 0,50 mol; N ≈ 3,01 × 10²³ átomos.',
-'Massas: C = 0,50 × 36,46 ≈ 18 g; D = 0,25 × 194,2 ≈ 49 g; A = 55,85 g; B = 2,0 × 32 = 64 g. Logo: C < D < A < B.',
-'A opção D. 1,2 × 10²³ átomos de H correspondem a 0,20 mol de átomos, isto é, cerca de 0,20 g de H.',
-'n(PCl₅) = 417/208,22 = 2,00 mol; n(H₃PO₄) = 147/97,99 = 1,50 mol; n(PH₃) = 6,8/33,99 = 0,20 mol. Cada molécula contém um átomo de P.',
-'7.1 KCN. Em 1,00 mg: n = 1,00 × 10⁻³/65,12 = 1,54 × 10⁻⁵ mol. Há o mesmo número de iões CN⁻: N ≈ 9,27 × 10¹⁸.',
-'17,75 g de Na₂SO₄ correspondem a 0,125 mol de unidades de fórmula, ou 0,375 mol de iões (3 por unidade). O mesmo número de átomos de Al corresponde a 0,375 mol: m = 0,375 × 26,98 ≈ 10,1 g.',
-'9.1 C. 32,08 g de CH₄ são 2,00 mol. 9.2 D: são verdadeiras II e IV. 9.3 B: a amostra de CH₄ tem 2,00 mol e a amostra de SO₃ tem 1,00 mol, logo o dobro das moléculas.',
-'Mg: 1,00 mol de unidades; CaCl₂: 0,250 mol; CO₂: 0,500 mol. A é maior; B é menor que C; há 0,250 mol de Ca²⁺; e 0,500 mol de Cl⁻, igual a 0,500 mol de unidades de CO₂.',
-'Opção C. n(H₂O) = 10,0/18,02 = 0,555 mol; n(CH₃COOH) = 0,166 mol; n(CCl₄) = 0,0650 mol. O recipiente 1 contém maior quantidade de matéria.',
-'Massa da solução = 1,02 × 500,0 = 510 g. n(K₂CrO₄) = 48,6/194,18 = 0,250 mol. Massa de água = 510 − 48,6 = 461,4 g; n(H₂O) ≈ 25,60 mol. Frações molares: soluto 9,67 × 10⁻³ e solvente 0,990. Fração mássica do soluto = 48,6/510 = 9,53 × 10⁻².'
+['n = 6,0/30,07 = 0,20 mol de C₂H₆.','N = 0,20 × Nₐ = 1,2 × 10²³ moléculas de C₂H₆.','Quantidade de matéria de átomos de C: 0,20 × 2 = 0,40 mol.','Quantidade de matéria de átomos de H: 0,20 × 6 = 1,20 mol.'],
+['n = 1,15/46,07 = 2,50 × 10⁻² mol de etanol.','N = 0,0250 × Nₐ = 1,50 × 10²² moléculas de etanol.','Número de átomos de C: 2 × 1,50 × 10²² = 3,00 × 10²².','Número de átomos de H: 6 × 1,50 × 10²² = 9,03 × 10²².','Número de átomos de O: 1 × 1,50 × 10²² = 1,50 × 10²².'],
+['A e B têm 0,10 mol de átomos cada.','Na amostra C: n(Ca) = 20/40,08 ≈ 0,50 mol; N ≈ 3,01 × 10²³ átomos.'],
+['Massas: C = 0,50 × 36,46 ≈ 18 g; D = 0,25 × 194,2 ≈ 49 g; A = 55,85 g; B = 2,0 × 32 = 64 g. Logo: C < D < A < B.'],
+['A opção D. 1,2 × 10²³ átomos de H correspondem a 0,20 mol de átomos, isto é, cerca de 0,20 g de H.'],
+['n(PCl₅) = 417/208,22 = 2,00 mol de átomos P.','n(H₃PO₄) = 147/97,99 = 1,50 mol de átomos P.','n(PH₃) = 6,8/33,99 = 0,20 mol de átomos P.'],
+['7.1 KCN.','7.2 Em 1,00 mg: n = 1,00 × 10⁻³/65,12 = 1,54 × 10⁻⁵ mol. Há o mesmo número de iões CN⁻: N ≈ 9,27 × 10¹⁸.'],
+['17,75 g de Na₂SO₄ correspondem a 0,125 mol de unidades de fórmula, ou 0,375 mol de iões (3 por unidade). O mesmo número de átomos de Al corresponde a 0,375 mol: m = 0,375 × 26,98 ≈ 10,1 g.'],
+['9.1 C. 32,08 g de CH₄ são 2,00 mol.','9.2 D: são verdadeiras II e IV.','9.3 B: a amostra de CH₄ tem 2,00 mol e a amostra de SO₃ tem 1,00 mol, logo o dobro das moléculas.'],
+['A: 1,00 mol de unidades estruturais; é a amostra com maior número.','B: 0,250 mol de unidades; é menor do que C (0,500 mol).','Número de iões Ca²⁺ em B: 0,250 mol.','Em B há 0,500 mol de iões Cl⁻, igual a 0,500 mol de unidades estruturais em C.'],
+['Opção C. n(H₂O) = 10,0/18,02 = 0,555 mol.','n(CH₃COOH) = 10,0/60,05 = 0,166 mol.','n(CCl₄) = 10,0/153,81 = 0,0650 mol.','O recipiente 1 contém maior quantidade de matéria.'],
+['Quantidade de K₂CrO₄: n = 48,6/194,18 = 0,250 mol.','Massa da solução = 1,02 × 500,0 = 510 g; massa de água = 510 − 48,6 = 461,4 g.','n(H₂O) ≈ 25,60 mol; x(soluto) = 0,250/(0,250 + 25,60) = 9,67 × 10⁻³.','x(solvente) = 1 − x(soluto) ≈ 0,990.','Fração mássica do soluto = 48,6/510 = 9,53 × 10⁻².']
 ];
 const hints=[
 ['Começa por descobrir quantos mol de etano correspondem a 6,0 g.','Usa n = m/M e depois N = n × Nₐ. Para passar às quantidades de átomos, usa os índices da fórmula C₂H₆.','A massa molar do C₂H₆ é 30,07 g mol⁻¹. Obtém n(C₂H₆) = 6,0/30,07; multiplica por Nₐ para moléculas, por 2 para mol de átomos C e por 6 para mol de átomos H.'],
@@ -53,6 +53,6 @@ function checkGroup(qi){const oks=qs[qi].parts.map((_,pi)=>checkPart(qi,pi));con
 function updateProgress(){const done=qs.filter((_,i)=>document.querySelector(`#question-${i}`).classList.contains('done')).length,pct=Math.round(done/qs.length*100);document.querySelector('#progress-label').textContent=`${done} de ${qs.length} grupos concluídos`;document.querySelector('#progress-percent').textContent=`${pct}%`;document.querySelector('#progress-bar').style.width=`${pct}%`}
 document.querySelector('#check-all').onclick=()=>qs.forEach((_,i)=>checkGroup(i));
 document.querySelector('#reset').onclick=()=>{document.querySelectorAll('input').forEach(x=>{if(x.type==='radio')x.checked=false;else x.value=''});document.querySelectorAll('.part-feedback').forEach(x=>{x.textContent='';x.className='part-feedback'});document.querySelectorAll('.q-status').forEach(x=>x.textContent='');document.querySelectorAll('.question').forEach(x=>x.classList.remove('done'));updateProgress()};
-const sol=document.querySelector('#solutions');solutions.forEach((s,i)=>sol.insertAdjacentHTML('beforeend',`<h3>Exercício ${i+1}</h3><p>${s}</p>`));document.querySelector('#toggle-solutions').onclick=e=>{sol.classList.toggle('hidden');e.currentTarget.textContent=sol.classList.contains('hidden')?'Mostrar soluções':'Ocultar soluções'};
+const sol=document.querySelector('#solutions');solutions.forEach((lines,i)=>sol.insertAdjacentHTML('beforeend','<h3>Exercício '+(i+1)+'</h3>'+lines.map(line=>'<p>'+line+'</p>').join('')));document.querySelector('#toggle-solutions').onclick=e=>{sol.classList.toggle('hidden');e.currentTarget.textContent=sol.classList.contains('hidden')?'Mostrar soluções':'Ocultar soluções'};
 
 
