@@ -105,7 +105,7 @@ function makeTrueFalse(activity, index) {
     const row = document.createElement('div');
     row.className = 'tf-row';
     const text = document.createElement('p');
-    text.innerHTML = `<strong>${String.fromCharCode(97 + rowIndex)}.</strong> ${statement}`;
+    text.innerHTML = `<strong>${index + 1}.${rowIndex + 1} - </strong>${statement}`;
     row.append(text);
     ['V', 'F'].forEach(value => {
       const label = document.createElement('label');
@@ -134,7 +134,13 @@ activities.forEach((activity, index) => {
   body.className = 'q-body';
   const prompt = document.createElement('p');
   prompt.className = 'q-context';
-  prompt.textContent = activity.prompt;
+  if (activity.type === 'truefalse') {
+    prompt.textContent = activity.prompt;
+  } else {
+    const itemNumber = document.createElement('strong');
+    itemNumber.textContent = `${index + 1}.1 - `;
+    prompt.append(itemNumber, document.createTextNode(activity.prompt));
+  }
   body.append(prompt);
   if (activity.figure) {
     const figure = document.createElement('figure');
@@ -204,3 +210,4 @@ document.querySelector('#reset').addEventListener('click', () => {
   document.querySelectorAll('.question').forEach(card => card.classList.remove('done'));
   updateProgress();
 });
+
