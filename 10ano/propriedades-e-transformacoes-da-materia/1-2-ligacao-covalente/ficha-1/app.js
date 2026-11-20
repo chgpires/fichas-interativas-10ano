@@ -16,7 +16,7 @@ const checks={
  lengthtrend:t=>/diminui|menor/.test(t)&&(/154/.test(t)||/134/.test(t)||/120/.test(t)),attraction:t=>/atrac/.test(t)&&/repuls/.test(t),energytrend:t=>/aument/.test(t)&&(/347/.test(t)||/837/.test(t)),stronger:t=>/forte|est[aá]vel|energia|quebrar|dissociar/.test(t)
 };
 const groups=[['1.1','1.2','1.3'],['2.1','2.2','2.3','2.4'],['3.1','3.2']];
-function norm(s){return s.toLocaleLowerCase('pt-PT').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,c=>String('⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c))).replace(/−/g,'-').replace(/\s+/g,' ').trim()}
+function norm(s){return s.toLocaleLowerCase('pt-PT').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,c=>String('⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c))).replace(/[₀₁₂₃₄₅₆₇₈₉]/g,c=>String('₀₁₂₃₄₅₆₇₈₉'.indexOf(c))).replace(/−/g,'-').replace(/\s+/g,' ').trim()}
 function result(el,state,msg){const f=el.querySelector('.feedback');f.className=`feedback ${state}`;f.textContent=msg}
 function isCorrect(el){const type=el.dataset.kind;if(type==='choice'){const selected=el.querySelector('input:checked');return selected?.value===el.dataset.answer}const text=norm(el.querySelector('textarea').value);if(!text)return null;return el.dataset.need.split(',').every(k=>checks[k](text))}
 function grade(el){const ok=isCorrect(el);if(ok===null){result(el,'neutral','Ainda não respondeste.');return null}result(el,ok?'success':'error',ok?'Atividade concluída com sucesso!':'Resposta incorreta. Revê os elementos pedidos e tenta novamente.');return ok}
